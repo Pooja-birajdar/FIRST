@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title></title>
+            <style >
+              body{
+                background-image: url(1.jpg);
+              }
+              
+                .SignUp
+                {
+                     width: 350px;
+                     height: 420px;
+                     box-shadow: 4px 4px black;
+                     margin-top: 100px;
+                     margin-left: 350px;
+                     padding-top: 15px;
+                     padding-left: 50px;
+                     border-radius: 15px;
+                     font-weight: bolder;
+                     background-color: gray;
+                     color: black;
+                }
+                .SignUp input[type="text"]
+                {
+                  width: 200px;
+                  height: 200x;
+                  margin-left: 50px;
+                  padding-top: 5px;
+                  padding-left: 5px;
+                  padding-bottom: 5px;
+                  border: 0;
+                  border-radius: 5px;
+                }
+                .SignUp input[type="email"]
+                {
+                  width: 200px;
+                  height: 80x;
+                  margin-left: 50px;
+                  padding-top: 5px;
+                  padding-left: 5px;
+                  padding-bottom: 5px;
+                  border: 0;
+                  border-radius: 5px;
+                }
+
+                .SignUp input[type="password"]
+                {
+                  width: 200px;
+                  height: 80x;
+                  margin-left: 50px;
+                  padding-top: 5px;
+                  padding-left: 5px;
+                  padding-bottom: 5px;
+                  border:0;
+                  border-radius:5px;
+                     
+                }
+                .SignUp input[type="button"]
+
+                {
+                  width: 200px;
+                  height: 35x;
+                  margin-left: 50px;
+                  padding-top: 10px;
+                  padding-left: 10px;
+                  padding-bottom: 10px;
+                  border:0;
+                  margin-top: 15px;
+                  border-radius:15px;
+                  color: black;
+                  font-weight: bolder;
+                  
+                  background-color: rgba(17, 185, 207, 0.904);
+                  
+                }
+                a.Main:hover
+                {
+                  font-weight: bolder;
+                  color: blue;
+                }
+                .SignUp input[type="button"]:hover
+                  {
+                    background-color: blue;
+                  }
+                  a.main1:hover
+                {
+                  color:blue;
+                  font-weight: bolder;
+                  text-decoration: underline;
+                }
+            .SignUp input[type="text"]:focus
+            {
+                outline-color: blue;
+            }
+            .SignUp input[type="email"]:focus
+            {
+                outline-color: blue;
+            }
+            .signup input[type="password"]:focus
+            {
+                outline-color: blue;
+            }
+            .main input[type="password"]:focus
+            {
+                outline-color: blue;
+            }
+                </style>
+                </head>
+                <body>
+                        <div class="SignUp">
+                            <h1 style="padding-left: 50px; color: red;">Sign Up Here</h1>
+                            <form >
+                                <!-- <input type="image" placeholder="Photo" required "" capture>  -->
+                                <input type="text" autofocus placeholder="First Name" required><br><br>
+                                <input type="text" placeholder="Last Name" required><br><br>
+                                <input type="email" placeholder="Email" required><br><br>
+                                <input type="password" placeholder="Password" required><br><br>
+                                <input type="password" placeholder="Confirm Password" required><br><br>
+                                 <input type="checkbox"  style="margin-left: 50px;" required>I agree to the <a class="Main"  href="https://click-labs.com">terms of service</a><br><br>
+                                <input type="button" value="Sign In"><br><b>
+                                </div>
+                                <br><label style="margin-left: 450px;">Already a member? <a class="main1"  href="Login.html">Login</a> Here</label><br>
+                                </form>
+                                <script>
+                                  url='https://reqres.in/api/users'
+                                  fetch(url)
+                                    .then(res=>res.json())
+                                    .then(res=>
+                                    {
+                                      var data=res.data
+                                      console.log(data)
+                                    })
+                                    </script>
+                        </body>
+                        </html>
